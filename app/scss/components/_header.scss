@@ -59,12 +59,12 @@
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     margin-left: 20px;
-    color: #243f4d;
+    color: $title-slider;
 
     &::after {
       content: '';
       position: absolute;
-      border: 1px solid #fff;
+      border: 1px solid $white;
       height: 32px;
       right: 0;
       top: 9px;
@@ -85,7 +85,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color: #fff;
+    background-color: $white;
     border-radius: 50%;
     text-align: center;
     top: 9px;     
@@ -98,7 +98,7 @@
     background-color: $slider;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    color: #243f4d;
+    color: $title-slider;
   }
 
   &__cart-img {
