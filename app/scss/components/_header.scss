@@ -21,7 +21,7 @@
 
   &__link {
     font-size: 15px;
-    line-height: 1.2rem;
+    line-height: 0.8;
     color: $menu; 
     @extend %Rubik-500;    
   }
@@ -89,7 +89,7 @@
     border-radius: 50%;
     text-align: center;
     top: 9px;     
-    line-height: 16px;
+    line-height: 1.8;
     left: 50px;
   }
 

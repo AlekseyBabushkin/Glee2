@@ -1,24 +1,19 @@
 .slider {
-  position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url('../../images/ellipse.png');
-    right: 185px;
-    top: 100px;
-    width: 609px;
-    height: 634px;
+  &__container {
+    display: block !important;  /* <- Я так и не придумал что можно сделать кроме !important*/
   }
-
+    
   &__top {
-    background-color: $slider;
+    background-image: url(../../images/slider-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 220px 0 45px;
   }
 
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
   }
 
   &__title {
@@ -26,7 +21,7 @@
     @extend %Rubik-500;
     font-size: 72px;
     color: $title-slider;
-    line-height: 70px;
+    line-height: 0.95;
     text-transform: uppercase;
     margin-bottom: 40px;    
   }
@@ -36,7 +31,7 @@
     @extend %Rubik-400;
     font-size: 18px;
     color: $menu;
-    line-height: 30px;
+    line-height: 1.6;
     margin-bottom: 35px;
   }
 
@@ -45,7 +40,7 @@
     background-color: $btn;
     color: $white;
     font-size: 15px;
-    line-height: 12px;
+    line-height: 0.8;
     padding: 20px 100px 20px 20px;
     outline-color: $btn;
     margin-bottom: 200px;
@@ -61,7 +56,11 @@
       height: 9px;
       top: 27px;
       right: 20px;
-    }
+    }    
+  }
+
+  &__img {
+    margin-top: 50px;   
   }
 
   &__bottom {
@@ -104,7 +103,7 @@
     display: flex;  
     justify-content: center;
     margin-top: 205px;
-
+  
     li {
       padding: 0 5px;
 
@@ -116,6 +115,7 @@
         border-radius: 50%;
         width: 29px;
         height: 29px;
+        outline: none;
       }
 
       &.slick-active {

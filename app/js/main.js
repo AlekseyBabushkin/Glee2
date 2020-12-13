@@ -1,17 +1,13 @@
-$(function(){
+$(function () {
 
- $('.slider__top').slick({
-   dots: true,
-   arrows:false,
- });
+  $('.slider__top').slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 3000,
+  });
 
- $('.button-nav__item').click(function(){
-   $('.button-nav__item').toggleClass('button-nav__item--active')
- });
-  
-
-//  $('.products').on('click', function(){
-//    $('.button-nav__item').toggleClass('button-nav__item--active')
-//  })
+  var mixer = mixitup('.products__items');
 
 });
