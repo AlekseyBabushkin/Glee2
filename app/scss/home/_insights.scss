@@ -1,0 +1,113 @@
+.insights {
+  position: relative;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    transform: translateY(130px);
+  }
+
+  &__title-link {
+    color: #262626;
+    position: relative;
+    padding-right: 25px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('../../images/partners/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      right: 0;
+      top: 5px;
+      width: 6px;
+      height: 11px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(170px);
+  }
+
+  &__item {
+    max-width: 370px;
+    border-radius: 5px;
+    background-color: $white;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    
+    & + & {
+      margin-left: 30px;
+    }
+  }
+ 
+  &__img {    
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &__link-btn {
+    position: absolute;
+    font-size: 14px;
+    padding: 8px 30px;
+    color: $white;
+    background-color: $btn;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin-top: -16px;
+    margin-left: 30px;
+  }
+
+  &__inform {
+    height: 170px;
+    padding: 35px 28px 0 28px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #262626;
+    @extend %DMSans-500; 
+    padding-bottom: 15px;  
+  }
+
+  &__info {
+    display: flex;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    align-items: flex-end;
+    margin-bottom: auto;
+  }
+  
+  &__data,
+  &__author {
+    font-size: 12px;
+    color: #222933;
+    text-transform: uppercase;
+  }
+
+  &__data {
+    margin-right: 30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+.partners {
+  padding: 265px 0 90px;
+  background-color: #fef7f0;
+  
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

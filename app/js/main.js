@@ -8,6 +8,16 @@ $(function () {
     speed: 3000,
   });
 
-  var mixer = mixitup('.products__items');
+  var products = mixitup('.products__items', {
+    selectors: {
+      control: 'products__btn'
+    }
+  });
+
+  var design = mixitup('.design__items'{
+    selectors: {
+      control: 'design__btn'
+    }
+  });
 
 });
