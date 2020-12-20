@@ -41,16 +41,21 @@
   &__search {
     background-color: #edf1f4;
     border-radius: 50%;   
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+
+      .nav__search-img {
+        transform: scale(1.2);
+      }
+    }
   }
 
   &__search-img {
     position: absolute;
     top: 18px;
     left: 18px;
-
-    &:hover {
-      transform: scale(1.2);
-    }
   }
   
   &__heart {
@@ -69,16 +74,19 @@
       right: 0;
       top: 9px;
     }
+
+    &:hover {
+
+      .nav__heart-img {
+        transform: scale(1.2);
+      }
+    }
   }
 
   &__heart-img {
     position: absolute;
     top: 17px;
-    left: 38px;
-
-    &:hover {
-      transform: scale(1.2);
-    }
+    left: 38px;    
   }
 
   &__heart-num {
@@ -99,16 +107,19 @@
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     color: $title-slider;
+
+    &:hover {
+
+      .nav__cart-img {
+        transform: scale(1.2);
+      }      
+    }
   }
 
   &__cart-img {
     position: absolute;
     top: 17px;
-    left: 33px;
-
-    &:hover {
-      transform: scale(1.2);
-    }
+    left: 33px;    
   }
 
   &__cart-num {
@@ -120,15 +131,21 @@
     background-color: $btn;
     border-radius: 50%;
     margin-left: 17px;
+    border: none;
+    cursor: pointer;
+    outline-color: $white;
+
+    &:hover {
+
+      .nav__dots-img {
+        transform: scale(1.1);
+      }
+    }
   }
 
   &__dots-img {
     position: absolute;
     top: 15px;
-    left: 15px;
-
-    &:hover {
-      transform: scale(1.1);
-    }
+    left: 15px;    
   }    
 }

@@ -1,12 +1,20 @@
 $(function () {
 
-  $('.slider__top').slick({
+  $('.slider-header__inner').slick({
     dots: true,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 3000,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    // speed: 3000,
   });
+
+  // $('.slider__top').slick({
+  //   dots: true,
+  //   arrows: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 5000,
+  //   speed: 3000,
+  // });
 
   var products = mixitup('.products__items', {
     selectors: {
@@ -14,7 +22,7 @@ $(function () {
     }
   });
 
-  var design = mixitup('.design__items'{
+  var design = mixitup('.design__items', {
     selectors: {
       control: 'design__btn'
     }
