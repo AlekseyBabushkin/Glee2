@@ -1,32 +1,59 @@
-.products{
+.products {
   margin-bottom: 170px;
-  
+
   &__title {
     margin-top: 72px;
   }
 
   &__items {
     display: grid;
-    min-height: 800px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
+  }  
+}
+
+.button-nav {
+  display: flex;
+  justify-content: center;  
+
+  &__list {
+    margin-bottom: 80px;
+
+    & + & {
+      margin-left: 30px;
+    }
   }
 
   &__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-    transition: all .3s;
+    padding: 0;
+    border: none;
+    background-color: $white;
+    color: #8b8b8b;
+    cursor: pointer;
+    outline: transparent;    
+  }
 
-    &:hover {
-      transform: scale(1.02);
+  .mixitup-control-active {
+    color: $title;
+  }
+}
 
-        .products__block {
-          transform: translateY(0);
-      }
+.product-cart {
+  position: relative;  
+  min-height: 380px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+
+      .product-cart__block {
+        transform: translateY(0);
     }
   }
 
@@ -34,7 +61,7 @@
     margin: auto;
   }
 
-  &__link {
+  &__title {
     color: $title-slider; 
     font-size: 16px;
     line-height: 2.2;
@@ -43,7 +70,7 @@
   }
 
   &__price {
-    @extend .products__link;
+    @extend .product-cart__title;
     color: $btn;
     margin-bottom: 25px;
   }
@@ -68,7 +95,11 @@
     height: 45px;
     border-radius: 50%;
     margin: 0 7px;
-    
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    outline: transparent;    
+
     &:hover {
       background-color: $btn;
       svg path {
@@ -76,27 +107,4 @@
       }
     }
   }
-}
-
-.button-nav {
-  text-align: center;
-  margin: 0 auto 75px;
-
-  &__item {
-    padding: 0;
-    border: none;
-    background-color: $white;
-    color: #8b8b8b;
-    cursor: pointer;
-    outline: none;
-
-    & + & {
-      margin-left: 30px;
-    }
-  }
-
-  .mixitup-control-active {
-    color: $title;
-  }
-
 }

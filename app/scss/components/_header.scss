@@ -8,15 +8,15 @@
     display: flex;
   }
 
-  &__item:hover {
-    transform: scale(1.04);
-  }
-
   &__item{
 
-    & + & {
-      margin-left: 34px;
-    }    
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
 
   &__link {
@@ -43,6 +43,7 @@
     border-radius: 50%;   
     border: none;
     cursor: pointer;
+    
 
     &:hover{
 
