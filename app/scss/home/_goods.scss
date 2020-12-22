@@ -19,41 +19,41 @@
     padding: 100px 150px 100px 390px;
   }
 
-  &__title {
-    font-size: 26px;
-    line-height: 1.2;
-    color: $title-slider;
-    margin-bottom: 25px;
-  }
+  // &__title {
+  //   font-size: 26px;
+  //   line-height: 1.2;
+  //   color: $title-slider;
+  //   margin-bottom: 25px;
+  // }
 
-  &__text {
-    @extend %Rubik-400;
-    color: $title-slider;
-    line-height: 1.9;
-    margin-bottom: 55px;
-  }
+  // &__text {
+  //   @extend %Rubik-400;
+  //   color: $title-slider;
+  //   line-height: 1.9;
+  //   margin-bottom: 55px;
+  // }
 
-  &__btn {
-    font-size: 15px;
-    color: $menu;
-    @extend %Rubik-500;
-    padding: 23px 86px 23px 19px;
-    border: 1px solid #b3b6b5;
-    border-radius: 4px;
-    position: relative;
+  // &__btn {
+  //   font-size: 15px;
+  //   color: $menu;
+  //   @extend %Rubik-500;
+  //   padding: 23px 86px 23px 19px;
+  //   border: 1px solid #b3b6b5;
+  //   border-radius: 4px;
+  //   position: relative;
 
-      &::after {
-      content: "";
-      position: absolute;
-      background-image: url(../images/goods/arrow-right.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 22px;
-      height: 9px;
-      top: 27px;
-      right: 20px;
-    }    
-  }
+  //     &::after {
+  //     content: "";
+  //     position: absolute;
+  //     background-image: url(../images/goods/arrow-right.svg);
+  //     background-repeat: no-repeat;
+  //     background-size: cover;
+  //     width: 22px;
+  //     height: 9px;
+  //     top: 27px;
+  //     right: 20px;
+  //   }    
+  // }
 
   &__img {
     position: absolute;
@@ -63,5 +63,6 @@
     height: 405px;
   }
 }
+
 
 
