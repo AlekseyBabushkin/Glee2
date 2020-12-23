@@ -4,6 +4,10 @@
   color: $footer;
   line-height: 2.3;
 
+  &__logo {
+    margin-bottom: 27px;
+  }
+
   a {
   color: $footer;
 
@@ -13,13 +17,23 @@
   }  
 }
 
-.top {
-  display: flex;
-  border-bottom: 1px solid #dae4e9;
+.footer-top {
   padding: 80px 0 60px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  align-items: flex-end;
+
+  &__inner {
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__address {
-    width: 230px;
+    max-width: 230px;
     margin-right: 70px;
 
     a {
@@ -29,18 +43,14 @@
     }
   }
 
-  &__address-img {
-    margin-bottom: 25px;
-  }  
-  
-  &__inner {
-    width: 270px;
-    margin-right: 30px;
+  // &__item {
+  //   width: 270px;
+  //   margin-right: 30px;
 
-    a {
-      line-height: 2;
-    }
-  }
+  //   a {
+  //     line-height: 2;
+  //   }
+  // }
 
   &__title {
     text-transform: uppercase;
@@ -61,15 +71,15 @@
     display: flex;
   }
 
-  &__form-input,
-  &__form-label {
+  &__input,
+  &__label {
     position: absolute;
     left: 0;
     top: 0;
     line-height: 0;
   }
 
-  &__form-input {
+  &__input {
     padding: 15px 10px 8px 10px;
     background-color: #fef7f0;
     border: none;
@@ -86,7 +96,7 @@
     }
   }
 
-  &__form-label {
+  &__label {
     padding: 20px 15px;
     @extend %DMSans-400;
     font-size: 12px;
@@ -94,7 +104,7 @@
     transition: all .2s ;
   }
 
-  &__form-btn {
+  &__btn {
     border: none;
     background-color: $btn;
     @extend %DMSans-400;
@@ -106,7 +116,7 @@
   }  
 }
 
-.bottom {
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   padding: 35px 0;
@@ -125,3 +135,5 @@
     }
   } 
 }
+
+
