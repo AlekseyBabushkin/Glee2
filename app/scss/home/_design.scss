@@ -1,6 +1,7 @@
 .design {
   margin-bottom: -20px;
-  &__items{
+
+  &__list{
     display: grid;
     min-height: 525px;
     grid-template-columns: repeat(3, 1fr);
@@ -10,11 +11,30 @@
     margin-bottom: 120px;
   }
 
-  &__item {
-    background-position: center;
+  &__video {
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  } 
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__video-link {
+
+    &:hover {
+      border: 15px solid $btn;
+      border-radius: 50%;
+      opacity: 1;
+    }
+  }  
+}
+
+.design-cart {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__title {
     display: block;
@@ -30,15 +50,5 @@
     color: $btn;
     margin-left: 35px;
   }
-
-  &__video {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
 }
+

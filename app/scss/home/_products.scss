@@ -120,13 +120,13 @@
 
 .goods {
   position: relative;
+  flex-grow: 1;
 
   &:not(:last-child) {
     margin-right: 30px;
   } 
 
   &__inner {
-    width: 870px; /*Нельзя фиксировать ширину*/
     max-height: 390px;
     background-color: #feefe2;
     padding-bottom: 123px;

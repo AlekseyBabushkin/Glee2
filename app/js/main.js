@@ -10,13 +10,13 @@ $(function () {
 
   var products = mixitup('.products__items', {
     selectors: {
-      control: 'products__btn'
+      control: '.button-nav__item'
     }
   });
 
-  var design = mixitup('.design__items', {
+  var design = mixitup('.design__list', {
     selectors: {
-      control: 'design__btn'
+      control: '.design__btn'
     }
   });
 
