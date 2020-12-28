@@ -1,0 +1,72 @@
+.login {
+  margin-top: 115px;
+  max-width: 470px;
+  margin: 115px auto 120px;
+
+  &__label {
+    @extend %Rubik-400;
+    display: block;
+    margin-bottom: 35px;
+    font-size: 14px;
+    color: #436372;
+  }
+
+  &__input {
+    border: 2px solid #f6f6f6;
+    background-color: $white;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    height: 60px;
+    padding: 0 15px;
+    outline-color: $btn;
+    font-size: 18px;
+    @extend %Rubik-500;
+    color: $title-slider
+  }
+
+  &__btn{
+    display: block;
+    background-color: $btn;
+    color: $white;
+    @extend %Rubik-500;
+    font-size: 18px;
+    line-height: 1.15;
+    border: none;
+    padding: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    outline-color: $title-slider;
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    border-bottom: 2px solid #f6f6f6;
+    margin-bottom: 35px;
+  }
+}
+
+.register {
+
+  &__text {
+    display: block;   
+    text-align: center;
+    @extend %Rubik-400;    
+    font-size: 14px;
+    color: #436372;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    border: 2px solid $btn;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    color: $title-slider;
+  }
+}
