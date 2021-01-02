@@ -39,8 +39,12 @@
 }
 
 .filter-category,
+.filter-price,
 .filter-brand {
   margin-bottom: 55px;
+}
+
+.filter-category {
   
   &__item{
     
@@ -61,10 +65,7 @@
     padding: 15px 25px 15px 15px;
     width: 100%;
   }
-}
 
-.filter-category {
-  
   &__link {
     position: relative;
 
@@ -84,7 +85,6 @@
 }
 
 .filter-price {
-  margin-bottom: 55px;
 
   &__range {
     display: flex;
@@ -101,15 +101,44 @@
 
 .filter-brand {
 
-  &__link {
-    display: flex;
-    justify-content: space-between;
+  &__label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 2px;
 
-    span {
-      color: #b3b3b3;
-      vertical-align: auto;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
+
+  &__box {
+    padding: 15px 25px 15px 15px;
+    display: flex;
+    justify-content: space-between; 
+    color: $title-slider;
+  }
+
+  &__input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked + .filter-brand__box {
+      border-radius: 5px;
+      background-color: $route;
+
+      span {
+        color: $title-slider;
+      }
+    }
+  }
+
+  &__text {
+    color: #b3b3b3;
+  }
+
 }
 
 .filter-recent {
@@ -147,6 +176,12 @@
     color: #333333;
   }
 
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .irs--flat .irs-line {
