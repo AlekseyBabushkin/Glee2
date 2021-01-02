@@ -112,6 +112,43 @@
   }
 }
 
+.filter-recent {
+
+  &__item {
+    display: flex;
+    margin-bottom: 25px;
+
+    &:hover {
+
+      a {
+        @extend %Rubik-500;
+      }
+    }
+  }
+
+  &__imgbox {
+    border:3px solid #f2f2f2;
+    margin-right: 20px;
+    width: 72px;
+    height: 72px;
+  }
+
+  &__img {    
+    margin: auto;
+    padding: 2px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #333333;
+  }
+
+}
+
 .irs--flat .irs-line {
   top: 25px;
   height: 3px;
