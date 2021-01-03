@@ -37,6 +37,11 @@ $route: #edf1f4;
   font-weight: 500;
 }
 
+%Rubik-700 {
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }  
