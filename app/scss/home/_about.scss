@@ -196,13 +196,32 @@
   }
 
   &__info {
-    max-width: 306px;
-    margin-right: 94px;
+    max-width: 320px;
+    margin-right: 80px;
   }
 
   &__text {
     line-height: 1.875;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
+  }
+
+  &__btn {
+    padding: 20px 60px 20px 18px;
+    background-color: $btn;
+    color: $white;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+
+    &::after {
+      content: '';
+      background-image: url('../../images/about/arrow-r.svg');
+      position: absolute;
+      width: 15px;
+      height: 11px;
+      right: 26px;
+      top: 24px;
+    }
   }
 
   &__content {
@@ -247,4 +266,20 @@
     }
   }
 
+  &__people {
+    display: flex;
+    flex-wrap: wrap;
+    // column-gap: 30px;
+    margin: 0 -15px 65px -15px;
+  }
+
+  &__img {
+    max-width: 370px;
+    max-height: 320px;
+    width: 100%;    
+  } 
+
+  &__item {
+    margin: 0 15px 0 15px;
+  }
 }
