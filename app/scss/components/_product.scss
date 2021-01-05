@@ -180,14 +180,57 @@
 }
 
 .product-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 -15px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
 
   &__item {
     margin: 0 15px 40px;
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 67px;
+ 
+  &__list {
+    display: flex;    
+  }
+
+  &__item {
+    margin-right: 15px;
+  }
+
+  &__link {
+    min-width: 50px;
+  } 
+
+  &__link,
+  &__next {
+    @extend %Rubik-400;
+    color: $title-slider;
+    padding: 0 18px;
+    min-height: 50px;
+    border: 1px solid $btn;
+  }
+
+  &__link--active {
+    background-color: $btn;
+    color: $white;
+  }
+
+  &__link,
+  &__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 .irs--flat .irs-line {
