@@ -76,19 +76,19 @@
 
   <main class="main">
     <div class="route">
-      <h2 class="route__title">Product list 1</h2>
+      <h2 class="route__title">Product list 2</h2>
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">Home</a>
           </li>
           <li class="breadcrumbs__item">
-            <span class="breadcrumbs__link" href="#">Product list 1</span>
+            <span class="breadcrumbs__link" href="#">Product list 2</span>
           </li>
         </ul>
       </div>
     </div>
-    
+
     <section class="product">
       <div class="container">
         <div class="product__inner">
@@ -116,10 +116,11 @@
 
             <div class="filter-price">
               <span class="product__title">Price</span>
-              <form class="filter-price__form" action="#" >
-                <input class="filter-price__input" type="text" data-min="0" data-max="1000" data-from="100" data-to="500">
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0" data-max="1000" data-from="100"
+                  data-to="500">
                 <div class="filter-price__range">
-                 <span>$<span class="filter-price__from"></span></span>
+                  <span>$<span class="filter-price__from"></span></span>
                   <span>$<span class="filter-price__to"></span></span>
                 </div>
               </form>
@@ -127,33 +128,180 @@
 
             <div class="filter-brand">
               <span class="product__title">Brand</span>
-              <ul class="filter-brand__list">
-                <li class="filter-brand__item">
-                  <a class="filter-brand__link" href="#">RFL<span>(10)</span></a>
-                </li>
-                <li class="filter-brand__item">
-                  <a class="filter-brand__link" href="#">Brothers<span>(21)</span></a>
-                </li>
-                <li class="filter-brand__item">
-                  <a class="filter-brand__link" href="#">Regal<span>(3)</span></a>
-                </li>
-                <li class="filter-brand__item">
-                  <a class="filter-brand__link" href="#">Nadia<span>(14)</span></a>
-                </li>
-                <li class="filter-brand__item">
-                  <a class="filter-brand__link" href="#">Otobi<span>(6)</span></a>
-                </li>
-              </ul>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__title">RFL</span>
+                    <span class="filter-brand__text">(10)</span>
+                  </div>
+                </label>
+
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__title">Brothers</span>
+                    <span class="filter-brand__text">(21)</span>
+                  </div>
+                </label>
+
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__title">Regal</span>
+                    <span class="filter-brand__text">(3)</span>
+                  </div>
+                </label>
+
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__title">Nadia</span>
+                    <span class="filter-brand__text">(14)</span>
+                  </div>
+                </label>
+
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__title">Otobi</span>
+                    <span class="filter-brand__text">(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-recent">
+              <span class="product__title">Recent products</span>
+              <div class="filter-recent__item">
+                <a class="filter-recent__imgbox" href="#">
+                  <img class="filter-recent__img" src="images/products/lamp1.png" alt="Pendant lamp">
+                </a>
+                <div class="filter-recent__box">
+                  <a class="filter-recent__name" href="#">Pendant lamp</a>
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <span class="filter-recent__price">23<span>$</span></span>
+                </div>
+              </div>
+
+              <div class="filter-recent__item">
+                <a class="filter-recent__imgbox" href="#">
+                  <img class="filter-recent__img" src="images/products/lamp2.png" alt="Pendant lamp">
+                </a>
+                <div class="filter-recent__box">
+                  <a class="filter-recent__name" href="#">Pendant lamp</a>
+                  <div class="star" data-rateyo-rating="3"></div>
+                  <span class="filter-recent__price">23<span>$</span></span>
+                </div>
+              </div>
+
+              <div class="filter-recent__item">
+                <a class="filter-recent__imgbox" href="#">
+                  <img class="filter-recent__img" src="images/products/lamp3.png" alt="Pendant lamp">
+                </a>
+                <div class="filter-recent__box">
+                  <a class="filter-recent__name" href="#">Pendant lamp</a>
+                  <div class="star" data-rateyo-rating="4.5"></div>
+                  <span class="filter-recent__price">23<span>$</span></span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="product__content"></div>
+
+          <div class="product-content">
+            <article class="product-blank">
+              <div class="product-blank__img">
+                <img src="images/product-list2/img1.png" alt="кресло">
+              </div>
+              <div class="product-blank__info">
+                <h2 class="product-blank__title">Wooden radio</h2>
+                <div class="star-product" data-rateyo-rating="4"></div>
+                <div class="product-blank__price">
+                  <span>23</span>
+                  <span>$</span>
+                </div>
+                <div class="product-blank__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-blank__btn">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product-blank">
+              <div class="product-blank__img">
+                <img src="images/product-list2/img2.png" alt="кресло">
+              </div>
+              <div class="product-blank__info">
+                <h2 class="product-blank__title">Wooden chair</h2>
+                <div class="star-product" data-rateyo-rating="3.5"></div>
+                <div class="product-blank__price">
+                  <span>23</span>
+                  <span>$</span>
+                </div>
+                <div class="product-blank__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-blank__btn">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product-blank">
+              <div class="product-blank__img">
+                <img src="images/product-list2/img3.png" alt="кресло">
+              </div>
+              <div class="product-blank__info">
+                <h2 class="product-blank__title">Pendant lamp</h2>
+                <div class="star-product" data-rateyo-rating="5"></div>
+                <div class="product-blank__price">
+                  <span>23</span>
+                  <span>$</span>
+                </div>
+                <div class="product-blank__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-blank__btn">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product-blank">
+              <div class="product-blank__img">
+                <img src="images/product-list2/img4.png" alt="кресло">
+              </div>
+              <div class="product-blank__info">
+                <h2 class="product-blank__title">Retro table</h2>
+                <div class="star-product" data-rateyo-rating="4"></div>
+                <div class="product-blank__price">
+                  <span>23</span>
+                  <span>$</span>
+                </div>
+                <div class="product-blank__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-blank__btn">Add to cart</button>
+              </div>
+            </article>
+
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+              </ul>
+              <a class="pagination__next" href="#">Next</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-
-
-
-
 
     <div class="partners">
       <div class="container">

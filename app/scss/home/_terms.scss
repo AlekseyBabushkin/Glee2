@@ -4,10 +4,6 @@
 
   &__item {
     margin-bottom: 60px;
-
-    // &:last-child {
-    //   margin-bottom: 0;
-    // }
   }
 
   &__title {
@@ -18,7 +14,8 @@
   }
 
   &__list {    
-    padding-left: 20px !important;
+    padding-left: 28px !important;
+    list-style-type: decimal-leading-zero;
   }
 
   &__text {
