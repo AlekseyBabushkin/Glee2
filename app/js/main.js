@@ -21,12 +21,25 @@ $(function () {
     speed: 3000,
   });
 
+  $('.star-product').rateYo({
+    starWidth: '18px',
+    spacing: "13px",
+    normalFill: '#d6d6d6',
+    ratedFill: '#ffcc00',
+    readOnly: true,
+  });
+
   $('.star').rateYo({
     starWidth: '11px',
     normalFill: '#d6d6d6',
     ratedFill: '#ffcc00',
     readOnly: true,
-  });
+  });  
+
+  lightbox.option({
+    'resizeDuratuon': 200,
+    'wrapAround': true,
+  })
 
   var products = mixitup('.products__items', {
     selectors: {
