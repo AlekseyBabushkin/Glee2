@@ -59,15 +59,64 @@
   }
 }
 
+.detalis-tabs {
+  margin-bottom: 115px;
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__tab {
+
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+  } 
+
+  &__link {
+    width: 240px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #edf1f4;
+    color: $title-slider;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %Rubik-500;
+    font-size: 18px;
+    text-align: center;
+
+  }
+
+  &__link--active {
+    background-color: $btn;
+    color: $white;
+  }
+
+  &__text{
+    display: none;
+
+    &.detalis-tabs__text--active {
+      display: block;
+    }
+  }
+
+  &__text--active {
+    color: $title-slider;
+    line-height: 1.875;
+    @extend %Rubik-400;
+  }
+}
+
 .detalis-related {
 
   &__item {
     margin: 60px 0;
   }
 }
-
-
-
 
 .jq-number__field {
   width: 148px;
@@ -175,4 +224,9 @@
 .slick-slide:active, 
 .slick-slide:focus {
   outline: none;
+}
+
+.slick-vertical .slick-slide {
+  height: 160px;
+  margin-bottom: 25px;
 }
