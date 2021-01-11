@@ -47,11 +47,11 @@
 
 .product-cart {
   position: relative;  
-  max-height: 380px;
+  height: 380px;
   max-width: 270px;
   width: 100%;
   padding: 15px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);

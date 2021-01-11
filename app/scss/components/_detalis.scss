@@ -1,0 +1,232 @@
+.detalis-content {
+  display: flex;
+  margin: 120px 0 100px 0;
+
+  &__images {
+    width: 550px;
+    margin-right: 70px;
+    display: flex;
+  }
+
+  &__small {
+    width: 140px;
+    margin-right: 25px;
+  }
+
+  &__small-item {
+    margin-bottom: 25px;
+    width: 140px;
+    height: 160px;
+    border: 2px solid #f2f2f2;
+    cursor: pointer;
+
+    img {
+      object-fit: cover;
+      width: 136px;
+      height: 156px;
+    }
+  }
+
+  &__big {
+    width: 390px;
+  }
+
+  &__big-item {
+    width: 390px;
+    height: 530px;
+    border: 2px solid #f2f2f2;
+    padding: 60px 0;
+    
+    img {
+      object-fit: cover;
+      margin: 0 auto;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 30px;
+  }
+
+  &__btn {
+    margin-left: 15px;
+  }
+
+  &__info {
+    margin-top: 55px;
+    @extend %Rubik-400;
+    color: $title-slider;
+    line-height: 1.875;
+  }
+}
+
+.detalis-tabs {
+  margin-bottom: 115px;
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__tab {
+
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+  } 
+
+  &__link {
+    width: 240px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #edf1f4;
+    color: $title-slider;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %Rubik-500;
+    font-size: 18px;
+    text-align: center;
+
+  }
+
+  &__link--active {
+    background-color: $btn;
+    color: $white;
+  }
+
+  &__text{
+    display: none;
+
+    &.detalis-tabs__text--active {
+      display: block;
+    }
+  }
+
+  &__text--active {
+    color: $title-slider;
+    line-height: 1.875;
+    @extend %Rubik-400;
+  }
+}
+
+.detalis-related {
+
+  &__item {
+    margin: 60px 0;
+  }
+}
+
+.jq-number__field {
+  width: 148px;
+  border: 1px solid $btn;
+}
+
+.jq-number__field input {
+  width: 100%;
+  height: 47px;
+  border: none;
+  outline: none;  
+  font-size: 15px;
+  @extend %Rubik-400;
+  color: #333;
+  text-align: center;
+}
+
+.jq-number {
+  padding: 0;
+  position: relative;
+}
+
+.jq-number__spin {
+  position: absolute;
+  width: 49px;
+  height: 48px;
+  top: 0;
+  cursor: pointer;
+}
+
+.jq-number__spin.minus,
+.jq-number__spin.plus {
+  border-left: 1px solid $btn;
+
+  &::after {
+    content: '+';
+    position: absolute;
+    color: #333;
+    top: 18px;
+    right: 20px;
+  }
+}
+
+.jq-number__spin.minus {
+  border-right: 1px solid $btn;
+  left: 0px;
+
+  &::after {
+    content: '-';
+  }
+}
+
+.jq-number__spin.plus {
+  right: 0;
+}
+
+.slick-slider {
+  top: 30px;
+  margin-bottom: 70px;
+}
+
+.slick-arrow {    
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #edf1f4;
+  border-radius: 5px;
+  outline: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $btn;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: -65px;
+  right: 70px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../../images/detalis/arrow-left.svg');
+    top: 19px;
+    left: 12px;
+    width: 22px;
+    height: 9px;
+  }
+}
+
+.slick-next {
+  right: 0;
+
+  &::before {
+    background-image: url('../../images/detalis/arrow-right.svg');
+    left: 12px;
+  }
+}
+
+.slick-slide:active, 
+.slick-slide:focus {
+  outline: none;
+}
+
+.slick-vertical .slick-slide {
+  height: 160px;
+  margin-bottom: 25px;
+}
